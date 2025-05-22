@@ -74,6 +74,8 @@
 
 ## 🗂️ Final Structure
 
+```
+`
 views/
 ├── header.py → Top navigation
 ├── hero.py → Main presentation
@@ -83,3 +85,4 @@ views/
 ├── projects.py → Featured projects
 ├── contact.py → Contact information
 └── footer.py → Footer with social media
+```
