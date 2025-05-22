@@ -75,14 +75,28 @@
 ## 🗂️ Final Structure
 
 ```
-`
-views/
-├── header.py → Top navigation
-├── hero.py → Main presentation
-├── about.py → Professional information
-├── cta.py → Call to action section
-├── experience.py → Work experience
-├── projects.py → Featured projects
-├── contact.py → Contact information
-└── footer.py → Footer with social media
+Portfolio/
+├── assets/
+│   ├── favicon.ico
+│   └── ...
+├── components/
+│   ├── ...
+│   └── ...
+│   └── ...
+├── styles/
+│   ├── colors.py
+│   ├── styles.py
+│   └── fonts.py
+├── views/
+│   ├── header.py     → Top navigation
+│   ├── hero.py       → Main presentation
+│   ├── about.py      → Professional information
+│   ├── cta.py        → Call to action section
+│   ├── experience.py → Work experience
+│   ├── projects.py   → Featured projects
+│   ├── contact.py    → Contact information
+│   └── footer.py     → Footer with social media
+├── __init__.py
+├── app.py
+└── requirements.txt
 ```
