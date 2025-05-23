@@ -62,15 +62,15 @@ def create_bio_section():
             as_="h1",
         ),
         rx.text(
-            "AI Software Engineer",  # Puedes cambiar este texto si lo deseas
+            "AI & Intelligent Systems Software Engineer",
             margin_bottom="1.5rem",
             font_size="1.25rem",
             line_height="1.75rem",
         ),
         create_paragraph(
             margin_bottom="1.5rem",
-            # Puedes cambiar este texto si lo deseas
-            paragraph_text="Experienced AI Software Engineer specializing in deep learning research and user-centric framework design",
+
+            paragraph_text="4th-year Intelligent Systems Engineering student at UIE Campus Coruña and AI Software Engineer: I design and deploy AI solutions for highly complex, data-driven environments, and I’m passionate about applying AI to Formula 1.",
         ),
         rx.flex(
             create_social_icon_link(
