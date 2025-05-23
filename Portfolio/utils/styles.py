@@ -185,12 +185,12 @@ def create_section_heading(heading_text: str, text_align: str = "left"):
     return rx.heading(
         heading_text,
         custom_attrs={"data-aos": "fade-right"},
-        font_family=Font.TITLE.value,  # Usar Font
+        font_family=Font.TITLE.value,
         font_weight="700",
-        margin_bottom=Size.BIG.value,  # Usar Size
-        font_size=FontSize.XLARGE.value,  # Usar FontSize
-        line_height="2.25rem",  # Ajustar si es necesario
-        color=TextColor.ACCENT.value,  # Usar TextColor
+        margin_bottom="3rem",
+        font_size=FontSize.XLARGE.value,
+        line_height="2.25rem",
+        color=TextColor.ACCENT.value,
         as_="h2",
         text_align=text_align,
     )
