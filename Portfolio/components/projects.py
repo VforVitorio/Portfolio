@@ -233,22 +233,22 @@ def create_project_card(
 def create_projects_section():
     """Create the 'Projects' section with expandable project cards filled with Lorem Ipsum."""
     return rx.box(
-        create_section_heading(heading_text="Lorem Ipsum Projects"),
+        create_section_heading(heading_text="My Projects"),
         rx.box(
             rx.cond(
                 ProjectState.selected_project != "",
                 # Layout when a project is selected
                 rx.box(
                     rx.cond(
-                        ProjectState.selected_project == "openvino",
+                        ProjectState.selected_project == "f1_strat_manager_ai",
                         create_project_card(
                             animation_attrs={
                                 "data-aos": "fade-up", "data-aos-delay": "200"},
-                            project_id="openvino",
+                            project_id="f1_strat_manager_ai",
                             project_title="Lorem Ipsum Dolor",
                             project_description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
                             technologies_used="Lorem, Ipsum, Dolor",
-                            href="https://github.com/openvinotoolkit/training_extensions",
+                            href="https://github.com/VforVitorio/F1_Strat_Manager",
                             link_text="Lorem Link",
                             project_details={
                                 "detailed_description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -273,15 +273,15 @@ def create_projects_section():
                         ),
                     ),
                     rx.cond(
-                        ProjectState.selected_project == "geti",
+                        ProjectState.selected_project == "f1_ai_team_detection",
                         create_project_card(
                             animation_attrs={
                                 "data-aos": "fade-up", "data-aos-delay": "400"},
-                            project_id="geti",
+                            project_id="f1_ai_team_detection",
                             project_title="Dolor Sit Amet",
                             project_description="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
                             technologies_used="Ipsum, Dolor, Sit",
-                            href="https://geti.intel.com/",
+                            href="https://github.com/VforVitorio/F1_AI_team_detection",
                             link_text="Lorem Link",
                             project_details={
                                 "detailed_description": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
@@ -306,15 +306,15 @@ def create_projects_section():
                         ),
                     ),
                     rx.cond(
-                        ProjectState.selected_project == "anomalib",
+                        ProjectState.selected_project == "transformacion",
                         create_project_card(
                             animation_attrs={
                                 "data-aos": "fade-up", "data-aos-delay": "600"},
-                            project_id="anomalib",
+                            project_id="transformacion",
                             project_title="Amet Consectetur",
                             project_description="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
                             technologies_used="Dolor, Sit, Amet",
-                            href="https://github.com/openvinotoolkit/anomalib",
+                            href="https://github.com/VforVitorio/Transformacion",
                             link_text="Lorem Link",
                             project_details={
                                 "detailed_description": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
@@ -345,31 +345,31 @@ def create_projects_section():
                     create_project_card(
                         animation_attrs={"data-aos": "fade-up",
                                          "data-aos-delay": "200"},
-                        project_id="openvino",
+                        project_id="f1_strat_manager_ai",
                         project_title="Lorem Ipsum Dolor",
                         project_description="Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                         technologies_used="Lorem, Ipsum, Dolor",
-                        href="https://github.com/openvinotoolkit/training_extensions",
+                        href="https://github.com/VforVitorio/F1_Strat_Manager",
                         link_text="Lorem Link",
                     ),
                     create_project_card(
                         animation_attrs={"data-aos": "fade-up",
                                          "data-aos-delay": "400"},
-                        project_id="geti",
+                        project_id="f1_ai_team_detection",
                         project_title="Dolor Sit Amet",
                         project_description="Ut enim ad minim veniam, quis nostrud ullamco.",
                         technologies_used="Ipsum, Dolor, Sit",
-                        href="https://geti.intel.com/",
+                        href="https://github.com/VforVitorio/F1_AI_team_detection",
                         link_text="Lorem Link",
                     ),
                     create_project_card(
                         animation_attrs={"data-aos": "fade-up",
                                          "data-aos-delay": "600"},
-                        project_id="anomalib",
+                        project_id="transformacion",
                         project_title="Amet Consectetur",
                         project_description="Duis aute irure dolor in reprehenderit.",
                         technologies_used="Dolor, Sit, Amet",
-                        href="https://github.com/openvinotoolkit/anomalib",
+                        href="https://github.com/VforVitorio/Transformacion",
                         link_text="Lorem Link",
                     ),
                     gap="2rem",
