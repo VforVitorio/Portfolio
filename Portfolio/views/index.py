@@ -9,6 +9,7 @@ from ..components.footer import create_footer
 from ..utils.styles import load_script
 
 
+# Create the main content of the page, including all sections.
 def create_main_content():
     """Create the main content of the page, including all sections."""
     return rx.box(
@@ -37,6 +38,7 @@ def create_main_content():
     )
 
 
+# Render the complete portfolio page with all necessary scripts and styles.
 def index() -> rx.Component:
     """Render the complete portfolio page with all necessary scripts and styles."""
     return rx.box(

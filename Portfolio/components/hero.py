@@ -1,10 +1,10 @@
 import reflex as rx
 from ..utils.styles import create_paragraph, create_icon
 
-# Constantes definidas directamente en el archivo
+# Directly defined constants in the file
 LINKEDIN_URL = "https://www.linkedin.com/in/victorvegasobral/"
 GITHUB_URL = "https://github.com/VforVitorio"
-# Asumiendo que quieres este nombre también aquí
+# Assume you want this name here as well
 SITE_NAME = "Hello! I´m Víctor Vega Sobral"
 AVATAR_URL = "https://avatars.githubusercontent.com/VforVitorio"
 
@@ -20,7 +20,7 @@ def create_social_icon_link(icon_alt, icon_tag, href):
         ),
         class_name="transform",
         href=href,
-        is_external=True,  # Abrir en una nueva pestaña
+        is_external=True,  # Open in a new tab
         transition_duration="300ms",
         transition_timing_function="cubic-bezier(0.4, 0, 0.2, 1)",
         _hover={
@@ -35,9 +35,9 @@ def create_social_icon_link(icon_alt, icon_tag, href):
 def create_profile_image():
     """Create a circular profile image with hover effect."""
     return rx.image(
-        alt=SITE_NAME,  # Usar SITE_NAME para el alt text
+        alt=SITE_NAME,  # Use SITE_NAME for alt text
         class_name="transform",
-        src=AVATAR_URL,  # Usar la nueva AVATAR_URL
+        src=AVATAR_URL,  # Use the new AVATAR_URL
         transition_duration="300ms",
         transition_timing_function="cubic-bezier(0.4, 0, 0.2, 1)",
         height="16rem",
@@ -54,7 +54,7 @@ def create_bio_section():
     """Create a biographical section with name, title, description, and social links."""
     return rx.box(
         rx.heading(
-            SITE_NAME,  # Usar SITE_NAME para el nombre
+            SITE_NAME,  # Use SITE_NAME for the name
             font_weight="700",
             margin_bottom="1rem",
             font_size="2.25rem",
@@ -69,14 +69,13 @@ def create_bio_section():
         ),
         create_paragraph(
             margin_bottom="1.5rem",
-
             paragraph_text="4th-year Intelligent Systems Engineering student at UIE Campus Coruña and AI Software Engineer: I design and deploy AI solutions for highly complex, data-driven environments, and I’m passionate about applying AI to Formula 1.",
         ),
         rx.flex(
             create_social_icon_link(
-                icon_alt="GitHub", icon_tag="github", href=GITHUB_URL),  # Usar GITHUB_URL
+                icon_alt="GitHub", icon_tag="github", href=GITHUB_URL),  # Use GITHUB_URL
             create_social_icon_link(
-                icon_alt="LinkedIn", icon_tag="linkedin", href=LINKEDIN_URL),  # Usar LINKEDIN_URL
+                icon_alt="LinkedIn", icon_tag="linkedin", href=LINKEDIN_URL),  # Use LINKEDIN_URL
             # create_social_icon_link(icon_alt="Twitter", icon_tag="twitter", href="https://x.com/harimkang"),
             display="flex",
             column_gap="1rem",

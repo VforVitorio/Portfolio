@@ -9,11 +9,12 @@ def create_list_item_link(link_url, link_text):
     )
 
 
+# Main navigation menu with logo and links.
 def create_navigation_menu():
     """Create the main navigation menu with logo and links."""
     return rx.flex(
         rx.el.a(
-            "Víctor Vega",  # Nombre actualizado
+            "Víctor Vega",  # Updated name
             href="#",
             transition_duration="300ms",
             transition_timing_function="cubic-bezier(0.4, 0, 0.2, 1)",

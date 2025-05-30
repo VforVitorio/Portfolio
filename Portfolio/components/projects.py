@@ -8,11 +8,13 @@ from ..utils.styles import (
 from ..state.project_state import ProjectState
 
 
+# Create a 'Technologies:' label in strong text.
 def create_technologies_label():
     """Create a 'Technologies:' label in strong text."""
     return rx.text.strong("Technologies:")
 
 
+# Create a section displaying technologies used.
 def create_technologies_section(technologies):
     """Create a section displaying technologies used."""
     return rx.text(
@@ -22,6 +24,7 @@ def create_technologies_section(technologies):
     )
 
 
+# Create the detailed content section of a project.
 def create_project_details(project_id: str, project_details: dict = None):
     """Create the detailed content section of a project."""
     if project_details is None:

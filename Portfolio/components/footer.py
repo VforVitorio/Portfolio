@@ -1,6 +1,9 @@
 import reflex as rx
 from ..utils.styles import create_text
 
+# Create the footer with copyright information.
+
+
 def create_footer():
     """Create the footer with copyright information."""
     return rx.box(
@@ -27,4 +30,4 @@ def create_footer():
         background_color="#1F2937",
         padding_top="2rem",
         padding_bottom="2rem",
-    ) 
+    )

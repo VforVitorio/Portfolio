@@ -1,6 +1,11 @@
 import reflex as rx
 from ..utils.styles import create_styled_heading
 
+# Directly defined constants in the file
+LINKEDIN_URL = "https://www.linkedin.com/in/victorvegasobral/"
+GITHUB_URL = "https://github.com/VforVitorio"
+# EMAIL_ADDRESS = "your_email@example.com" # Uncomment and update if you want to use a constant for the email
+
 
 def create_logo_image(alt_text, image_src):
     """Create a logo image with specified dimensions and alt text."""
@@ -166,14 +171,14 @@ def create_education():
     return rx.box(
         rx.flex(
             create_logo_image(
-                alt_text="UIE Logo",  # Actualizado
-                # URL de logo genérica, actualizar si se tiene una específica
+                alt_text="UIE Logo",  # Updated
+                # Generic logo URL, update if a specific one is available
                 image_src="https://www.afundacion.org/images/fundacion_publicaciones/LOGO_UIE_CUADRADO-01.jpg",
             ),
             create_info_box(
-                title="UIE, Universidad Intercontinental de la Empresa",  # Actualizado
-                subtitle="Fourth-year student of Intelligent Systems Engineering.",  # Actualizado
-                description="A Coruña Campus.",  # Actualizado
+                title="UIE, Universidad Intercontinental de la Empresa",  # Updated
+                subtitle="Fourth-year student of Intelligent Systems Engineering.",  # Updated
+                description="A Coruña Campus.",  # Updated
             ),
             display="flex",
             align_items="flex-start",

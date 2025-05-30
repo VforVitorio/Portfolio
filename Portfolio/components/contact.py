@@ -1,10 +1,10 @@
 import reflex as rx
 from ..utils.styles import create_styled_heading, create_paragraph, create_section_heading
 
-# Constantes definidas directamente en el archivo
+# Directly defined constants in the file
 LINKEDIN_URL = "https://www.linkedin.com/in/victorvegasobral/"
 GITHUB_URL = "https://github.com/VforVitorio"
-# EMAIL_ADDRESS = "tu_email@example.com" # Descomenta y actualiza si quieres usar una constante para el email
+# EMAIL_ADDRESS = "tu_email@example.com" # Uncomment and update if you want to use a constant for the email
 
 
 def create_contact_icon(icon_alt, icon_tag):
@@ -29,7 +29,7 @@ def create_contact_link(link_url, icon_alt, icon_tag, link_text):
             align_items="center",
         ),
         href=link_url,
-        is_external=True,  # Abrir en una nueva pestaña
+        is_external=True,  # Open in a new tab
         transition="all 0.3s ease-in-out",
         _hover={"color": "#93C5FD", "transform": "translateY(-2px)"},
         color="#60A5FA",
@@ -67,21 +67,21 @@ def create_contact_section():
                                 align_items="center",
                                 justify_content="center",
                             ),
-                            padding="1.25rem 2.5rem",  # Más grande
-                            font_size="1.15rem",  # Texto más grande
-                            background_color="#7C3AED",  # Morado como el título
+                            padding="1.25rem 2.5rem",  # Larger
+                            font_size="1.15rem",  # Larger text
+                            background_color="#7C3AED",  # Purple like the title
                             color="white",
                             border_radius="0.75rem",
                             width="100%",
-                            margin_bottom="0.5rem",  # Menos margen inferior
-                            margin_top="0.5rem",      # Menos margen superior
+                            margin_bottom="0.5rem",  # Less bottom margin
+                            margin_top="0.5rem",      # Less top margin
                             _hover={
                                 "background_color": "#6D28D9",
                                 "transform": "translateY(-2px)",
                             },
                             transition="all 0.3s ease-in-out",
                         ),
-                        href="/F1-Strat-Manager.pdf",
+                        href="/F1-Strat-Manager.pdf",  # Path to the CV PDF
                         is_external=True,
                         text_decoration="none",
                     ),

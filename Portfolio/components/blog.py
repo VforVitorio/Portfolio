@@ -7,6 +7,7 @@ from ..utils.styles import (
 )
 
 
+# Create the 'Blog' section linking to Medium profile.
 def create_blog_section():
     """Create the 'Blog' section linking to Medium profile."""
     return rx.box(
@@ -14,14 +15,14 @@ def create_blog_section():
         rx.vstack(
             create_paragraph(
                 paragraph_text="Although I haven’t published any articles here yet, I’m gearing up to launch a series on Medium. My work delves into the cutting-edge intersection of Formula 1 and Artificial Intelligence, examining how AI-driven insights can transform race strategies, optimize performance, and elevate the fan experience in this exhilarating sport.",
-                margin_bottom="1rem"  # Añadido el argumento margin_bottom
+                margin_bottom="1rem"  # Added the margin_bottom argument
             ),
             create_link_with_icon(
                 link_text="Visit my Medium profile",
-                icon_alt="Medium Logo",  # O un icono más genérico si no tienes el logo de Medium
-                icon_tag="external-link",  # O un tag de icono apropiado
+                icon_alt="Medium Logo",  # Or a more generic icon if you don't have the Medium logo
+                icon_tag="external-link",  # Or an appropriate icon tag
                 href="https://medium.com/@VforVitorio",
-                is_external=True  # Para abrir en una nueva pestaña
+                is_external=True  # To open in a new tab
             ),
             spacing="4",
             align_items="start",
@@ -41,5 +42,5 @@ def create_blog_section():
         margin_right="auto",
         padding_left="1rem",
         padding_right="1rem",
-        id="blog",  # Añadir ID si se va a enlazar desde la navegación
+        id="blog",  # Add ID if you are going to link from navigation
     )

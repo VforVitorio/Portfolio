@@ -1,11 +1,10 @@
 import reflex as rx
 from enum import Enum
 
-# Contenido de styles/colors.py
+# Main colors of the application.
 
 
 class Color(Enum):
-    """Colores principales de la aplicación."""
     ACCENT = "#a78bfa"
     PRIMARY_BG = "#121127"
     SECONDARY_BG = "#1e1b4b"
@@ -13,8 +12,8 @@ class Color(Enum):
     BORDER = "#2d2d3a"
 
 
+# Text colors.
 class TextColor(Enum):
-    """Colores de texto."""
     PRIMARY = "#ffffff"
     SECONDARY = "#d1d5db"
     TERTIARY = "#9ca3af"
@@ -22,21 +21,22 @@ class TextColor(Enum):
     AGAINST_ACCENT = "#ffffff"
 
 
+# Colors for gradients.
 class GradientColor(Enum):
-    """Colores para gradientes."""
     NAVBAR_START = Color.PRIMARY_BG.value
     NAVBAR_END = Color.SECONDARY_BG.value
     LOGO_TEXT_START = Color.ACCENT.value
     LOGO_TEXT_END = TextColor.PRIMARY.value
 
 
+# Status colors.
 class StatusColor(Enum):
     SUCCESS = "#10b981"
     WARNING = "#f59e0b"
     ERROR = "#ef4444"
     INFO = "#3b82f6"
 
-# Contenido de styles/fonts.py
+# Fonts.
 
 
 class Font(Enum):
@@ -45,10 +45,11 @@ class Font(Enum):
     LOGO = "'Exo 2', sans-serif"
 
 
-# Contenido de styles/styles.py (parcial)
+# Maximum width for containers.
 MAX_WIDTH = "1200px"
 
 
+# Sizes.
 class Size(Enum):
     ZERO = "0"
     VERY_SMALL = "1"
@@ -60,6 +61,7 @@ class Size(Enum):
     VERY_BIG = "9"
 
 
+# Font sizes.
 class FontSize(Enum):
     SMALL = "2"
     MEDIUM = "3"
@@ -70,10 +72,12 @@ class FontSize(Enum):
     LOGO = "28px"
 
 
+# Stylesheets for fonts.
 STYLESHEETS = [
     "https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Inter:wght@400;500;700&display=swap",
 ]
 
+# Base style for the application.
 BASE_STYLE = {
     "font_family": Font.DEFAULT.value,
     "font_size": FontSize.MEDIUM.value,
