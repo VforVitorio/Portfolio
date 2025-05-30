@@ -37,7 +37,7 @@ def create_contact_link(link_url, icon_alt, icon_tag, link_text):
 
 
 def create_contact_section():
-    """Create the 'Contact' section with contact information."""
+    """Create the 'Contact' section with contact information and resume download."""
     return rx.box(
         create_section_heading(heading_text="Contact"),
         rx.box(
@@ -54,53 +54,55 @@ def create_contact_section():
                     text_align="center",
                 ),
                 rx.vstack(
-                    # Se comenta la sección del botón de descarga del currículum
-                    # rx.link(
-                    #     rx.button(
-                    #         rx.hstack(
-                    #             rx.icon(
-                    #                 tag="download",
-                    #                 height="1.5rem",
-                    #                 width="1.5rem",
-                    #             ),
-                    #             rx.text("Download Resume"),
-                    #             spacing="2",
-                    #             align_items="center",
-                    #             justify_content="center",
-                    #         ),
-                    #         padding="1rem 2rem",
-                    #         background_color="rgb(59, 130, 246)",
-                    #         border_radius="0.5rem",
-                    #         width="100%",
-                    #         _hover={
-                    #             "background_color": "rgb(37, 99, 235)",
-                    #             "transform": "translateY(-2px)",
-                    #         },
-                    #         transition="all 0.3s ease-in-out",
-                    #     ),
-                    #     href="/resume.pdf", # Se asume que resume.pdf está en la carpeta public o assets
-                    #     is_external=True,
-                    #     text_decoration="none",
-                    # ),
-                    # rx.divider(
-                    #     margin_y="1.5rem",
-                    #     opacity="0.2",
-                    # ),
+                    rx.link(
+                        rx.button(
+                            rx.hstack(
+                                rx.icon(
+                                    tag="download",
+                                    height="1.5rem",
+                                    width="1.5rem",
+                                ),
+                                rx.text("Download Resume"),
+                                spacing="2",
+                                align_items="center",
+                                justify_content="center",
+                            ),
+                            padding="1.25rem 2.5rem",  # Más grande
+                            font_size="1.15rem",  # Texto más grande
+                            background_color="#7C3AED",  # Morado como el título
+                            color="white",
+                            border_radius="0.75rem",
+                            width="100%",
+                            margin_bottom="0.5rem",  # Menos margen inferior
+                            margin_top="0.5rem",      # Menos margen superior
+                            _hover={
+                                "background_color": "#6D28D9",
+                                "transform": "translateY(-2px)",
+                            },
+                            transition="all 0.3s ease-in-out",
+                        ),
+                        href="/F1-Strat-Manager.pdf",
+                        is_external=True,
+                        text_decoration="none",
+                    ),
+                    rx.divider(
+                        margin_y="1.2rem",
+                        opacity="0.2",
+                    ),
                     create_contact_link(
-                        # Mantener o cambiar a EMAIL_ADDRESS
                         link_url="mailto:victorvegasobral@yahoo.com",
                         icon_alt="Email",
                         icon_tag="mail",
-                        link_text="victorvegasobral@yahoo.com",  # Mantener o cambiar
+                        link_text="victorvegasobral@yahoo.com",
                     ),
                     create_contact_link(
-                        link_url=LINKEDIN_URL,  # Usar constante
+                        link_url=LINKEDIN_URL,
                         icon_alt="LinkedIn",
                         icon_tag="linkedin",
                         link_text="LinkedIn Profile",
                     ),
                     create_contact_link(
-                        link_url=GITHUB_URL,  # Usar constante
+                        link_url=GITHUB_URL,
                         icon_alt="GitHub",
                         icon_tag="github",
                         link_text="GitHub Profile",
